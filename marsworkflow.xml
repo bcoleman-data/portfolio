@@ -1,0 +1,74 @@
+<mxfile>
+  <diagram name="Mission to Mars Workflow">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- DATA SOURCES HEADER -->
+        <mxCell id="dsHeader" value="Data Sources" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- NASA NEWS -->
+        <mxCell id="nasaNews" value="NASA Mars News&#10;Latest headline + summary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- JPL IMAGE -->
+        <mxCell id="jplImage" value="JPL Featured Image&#10;High-res Mars image" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- WEATHER -->
+        <mxCell id="marsWeather" value="Mars Weather&#10;Most recent weather tweet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- FACTS -->
+        <mxCell id="marsFacts" value="Mars Facts&#10;Pandas HTML table" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- HEMISPHERES -->
+        <mxCell id="hemispheres" value="Mars Hemispheres&#10;Four high-res images" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="380" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- SCRAPING BLOCK -->
+        <mxCell id="scraping" value="Scraping & Parsing&#10;scrape_mars.py&#10;BeautifulSoup, Splinter, Requests, Pandas&#10;Output: structured dictionary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="260" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- ARROWS -->
+        <mxCell id="arrow1" edge="1" parent="1" source="nasaNews" target="scraping"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="arrow2" edge="1" parent="1" source="jplImage" target="scraping"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="arrow3" edge="1" parent="1" source="marsWeather" target="scraping"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="arrow4" edge="1" parent="1" source="marsFacts" target="scraping"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="arrow5" edge="1" parent="1" source="hemispheres" target="scraping"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- MONGODB -->
+        <mxCell id="mongodb" value="MongoDB&#10;Stores latest scraped dataset&#10;Single document updated each scrape" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6ffe6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="620" y="190" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="arrow6" edge="1" parent="1" source="scraping" target="mongodb"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- FLASK -->
+        <mxCell id="flask" value="Flask Application&#10;/scrape triggers new scrape&#10;/ loads data from MongoDB&#10;Renders Jinja2 template" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="900" y="190" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="arrow7" edge="1" parent="1" source="mongodb" target="flask"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- DASHBOARD -->
+        <mxCell id="dashboard" value="Mars Dashboard (index.html)&#10;- Latest news&#10;- Featured image&#10;- Weather report&#10;- Facts table&#10;- Hemisphere images" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e6ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="180" width="260" height="160" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="arrow8" edge="1" parent="1" source="flask" target="dashboard"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>CitiBike NYC 2019 Analysis</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span>
+					<span class="title">Brandon Coleman Portfolio</span>
+				</a>
+				<!-- Menu Toggle -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li>
+					<span class="opener">Projects</span>
+					<ul>
+						<a href="rainfall.html">Rainfall Prediction</a>
+						<a href="citibike.html">CitiBike Analysis</a>
+						<a href="mars.html">Mission to Mars</a>
+						<a href="leetcode.html">LeetCode Practice</a>
+						<a href="etl.html">ETL Pipeline</a>
+						<a href="employee.html">Employee Database</a>
+						<a href="vacancy.html">Vacancy Collaborative</a>
+
+					</ul>
+				</li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<div class="content-block">
+				<h1>CitiBike Exploratory Patterns & Behaviors in Tableau</h1>
+					<p>
+						An exploratory Tableau analysis of 2.3 million CitiBike trips revealing usage patterns,
+						station demand, and demographic differences across New York City. This project blends
+						data wrangling, visualization design, and urban mobility insights to tell a clear story
+						about how New Yorkers use the bike‑share system.
+					</p>
+				</div>
+
+				<!-- Tableau Dashboard Embed -->
+				<div class="content-block">
+					<h2>Interactive Dashboard</h2>
+					<p>Explore the full Tableau dashboard below:</p>
+				</div>
+
+				<!-- Replace this with your actual Tableau embed code -->
+				<div class="tableauPlaceholder" id="vizCitibike" style="width:100%; height:800p;">
+					<!-- Your Tableau Public embed code goes here -->
+					<div class='tableauPlaceholder' id='viz1767994449458' style='position: relative'><noscript><a
+								href='#'><img alt='Overview '
+									src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CitiBikeNYC2019&#47;Overview&#47;1_rss.png'
+									style='border: none' /></a></noscript><object class='tableauViz'
+							style='display:none;'>
+							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+							<param name='embed_code_version' value='3' />
+							<param name='site_root' value='' />
+							<param name='name' value='CitiBikeNYC2019&#47;Overview' />
+							<param name='tabs' value='no' />
+							<param name='toolbar' value='yes' />
+							<param name='static_image'
+								value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CitiBikeNYC2019&#47;Overview&#47;1.png' />
+							<param name='animate_transition' value='yes' />
+							<param name='display_static_image' value='yes' />
+							<param name='display_spinner' value='yes' />
+							<param name='display_overlay' value='yes' />
+							<param name='display_count' value='yes' />
+							<param name='language' value='en-US' />
+						</object></div>
+					<script
+						type='text/javascript'>                    var divElement = document.getElementById('viz1767994449458'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1050px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+				     <p>
+					</div>
+
+				<!-- Project Overview -->
+				<div class="content-block">
+					<h2>Project Overview</h2>
+					<p>
+						This project analyzes over 2.3 million CitiBike trips from 2019 to uncover how riders move
+						across the city throughout the year. The goal was to identify patterns in station demand,
+						trip duration, and rider behavior, and to communicate these insights through an interactive
+						Tableau dashboard. The analysis highlights differences between subscribers and casual riders,
+						seasonal trends, and geographic usage patterns across Manhattan, Brooklyn, and beyond.
+					</p>
+				</div>
+
+				<!-- Key Insights -->
+				<div class="content-block">
+					<h2>Key Insights</h2>
+
+					<h3>1. Weekday vs Weekend Behavior</h3>
+					<p>
+						Weekdays show strong commuter patterns with sharp morning and evening peaks, while weekends
+						shift toward leisure‑based midday usage.
+					</p>
+
+					<h3>2. Station Demand is Highly Uneven</h3>
+					<p>
+						A small cluster of Manhattan stations accounts for a disproportionate share of trips,
+						revealing opportunities for rebalancing and resource planning.
+					</p>
+
+					<h3>3. Subscriber vs Customer Differences</h3>
+					<p>
+						Subscribers take shorter, more frequent trips consistent with commuting, while casual riders
+						take longer leisure‑oriented rides.
+					</p>
+
+					<h3>4. Seasonal Trends</h3>
+					<p>
+						Usage spikes in summer months and drops sharply in winter, highlighting strong seasonality
+						in bike‑share demand.
+					</p>
+				</div>
+
+				<!-- Technical Approach -->
+				<div class="content-block">
+					<h2>Technical Approach</h2>
+					<ul>
+						<li>Cleaned and filtered 2.3M+ trip records</li>
+						<li>Created calculated fields for trip duration, time of day, and rider type</li>
+						<li>Built interactive dashboards with filters for station, date, and rider demographics</li>
+						<li>Used heatmaps, bar charts, and geospatial maps to highlight usage patterns</li>
+					</ul>
+				</div>
+
+				<!-- What I Learned -->
+				<div class="content-block">
+					<h2>What I Learned</h2>
+					<p>
+						This project strengthened my ability to work with large datasets, design intuitive dashboards,
+						and communicate insights clearly. It also reinforced the importance of understanding user
+						behavior when analyzing transportation systems and designing visualizations that support
+						decision‑making.
+					</p>
+				</div>
+
+				<!-- Links -->
+				<div class="content-block">
+					<h2>Links</h2>
+					<p>
+						<a href="https://public.tableau.com/app/profile/brandon.coleman5439/viz/CitiBikeNYC2019/Overview"
+							target="_blank">
+							View the Tableau Dashboard
+						</a>
+					</p>
+					<p>
+						<a href="https://github.com/bcoleman-data/CitiBike-Tableau-Analysis" target="_blank">
+							View the GitHub Repository
+						</a>
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+
+				<section style="text-align: center;">
+					<h2>Connect</h2>
+					<!-- Email and Social -->
+
+				<ul class="icons" style="justify-content: center;">
+    <li>
+        <a href="mailto:bcoleman-data@outlook.com" class="icon solid style2 fa-envelope">
+            <span class="label">Email</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="https://linkedin.com/in/bcoleman0" class="icon brands style2 fa-linkedin">
+            <span class="label">LinkedIn</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="https://github.com/bcoleman-data" class="icon brands style2 fa-github">
+            <span class="label">GitHub</span>
+        </a>
+    </li>
+
+    <!-- LeetCode SVG icon -->
+<li>
+    <a href="https://leetcode.com/u/bcoleman-data/" class="icon style2">
+        <span class="label">LeetCode</span>
+        <svg class="leetcode-icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M41 4c-2 0-4 .8-5.7 2.3L18.8 22.8c-3.1 3.1-3.1 8.1 0 11.2l16.5 16.5c1.6 1.6 3.6 2.3 5.7 2.3s4.1-.8 5.7-2.3l4.2-4.2c1.2-1.2 1.2-3.1 0-4.3-1.2-1.2-3.1-1.2-4.3 0l-4.2 4.2c-.6.6-1.3.9-2.1.9s-1.5-.3-2.1-.9L23.1 30.8c-1.2-1.2-1.2-3.1 0-4.3L36.2 13.4c.6-.6 1.3-.9 2.1-.9s1.5.3 2.1.9l4.2 4.2c1.2 1.2 3.1 1.2 4.3 0 1.2-1.2 1.2-3.1 0-4.3l-4.2-4.2C45.1 4.8 43 4 41 4zm6.5 22H31.8c-1.7 0-3 1.3-3 3s1.3 3 3 3h15.7c3.3 0 6 2.7 6 6s-2.7 6-6 6h-9.2c-1.7 0-3 1.3-3 3s1.3 3 3 3h9.2c6.6 0 12-5.4 12-12s-5.4-12-12-12z"/>
+        </svg>
+    </a>
+</li>
+
+</ul>
+
+				</section>
+
+				<ul class="copyright">
+					<li><strong>
+							<h2>&copy;Brandon Coleman. All rights reserved.</h2>
+						</strong></li>
+					<li><strong>Design: <a href="http://html5up.net">HTML5 UP</a></strong></li>
+				</ul>
+			</div>
+		</footer>
+
+
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

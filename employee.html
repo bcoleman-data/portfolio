@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Employee Database Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <div class="inner">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+                        <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+                        <span class="title">Brandon Coleman Portfolio</span>
+                    </a>
+                    <!-- Nav -->
+                    <nav>
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li>
+					<span class="opener">Projects</span>
+					<ul>
+						<a href="rainfall.html">Rainfall Prediction</a>
+						<a href="citibike.html">CitiBike Analysis</a>
+						<a href="mars.html">Mission to Mars</a>
+						<a href="leetcode.html">LeetCode Practice</a>
+						<a href="etl.html">ETL Pipeline</a>
+						<a href="employee.html">Employee Database</a>
+						<a href="vacancy.html">Vacancy Collaborative</a>
+
+					</ul>
+				</li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+            <!-- Main -->
+            <div id="main">
+                <div class="content-block">
+                    <h1>Employee Database Project</h1>
+
+                    <section>
+                        <h2>Overview</h2>
+                        <p>
+                            This project involved designing a complete relational employee database from six CSV files
+                            containing information on employees, departments, salaries, titles, and organizational
+                            structure. I built the schema in SQL, created an Entity Relationship Diagram (ERD), and
+                            performed analytical queries to uncover insights about hiring trends, departmental
+                            composition,
+                            and salary distributions.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Data Sources</h2>
+                        <p>The project was built from six raw CSV files:</p>
+                        <div class="csv-grid">
+                            <ul>
+                                <li>employees.csv</li>
+                                <li>departments.csv</li>
+                                <li>dept_emp.csv</li>
+                                <li>dept_manager.csv</li>
+                                <li>salaries.csv</li>
+                                <li>titles.csv</li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Placeholder: Screenshot of CSV folder or sample rows -->
+                        <span class="inline-visual">
+                            <img src="/images/six_csvs_employeeDB.png" alt="Placeholder for data preview" />
+                        </span>
+                    </section>
+                    <p></p>
+                    <section>
+                        <h2>Database Schema</h2>
+                        <p>
+                            I designed a normalized schema that accurately models the relationships between employees,
+                            departments, managers, salaries, and titles. The ERD below illustrates the final structure.
+                        </p>
+
+                        <!-- Placeholder: ERD Diagram -->
+                        <span class="inline-visual">
+                            <img src="/images/Employees_ERD.png" alt="Placeholder for ERD diagram" />
+                        </span>
+                    </section>
+                    <p></p>
+                    <section>
+                        <h2>Key SQL Queries</h2>
+                        <p>
+                            To analyze the dataset, I wrote SQL queries that explored:
+                        </p>
+                        <ul>
+                            <li>Employee salary information joined across multiple tables</li>
+                            <li>Hiring patterns, including employees hired in specific years </li>
+                            <li>Department manager assignments and their employment timelines </li>
+                            <li>How employees are distributed across departments like Sales and Development</li>
+                            <li>Last‑name frequency to identify common patterns in the workforce</li>
+                        </ul>
+
+                        <!-- Placeholder: SQL screenshot -->
+                        <span class="inline-visual">
+                            <img src="/images/emp_query.png" alt="Placeholder for SQL query screenshot" />
+                        </span>
+                    </section>
+                    <p></p>
+                    <section>
+                        <h2>Insights</h2>
+                        <p>
+                            Through this analysis, I uncovered patterns in salary progression, departmental growth, and
+                            employee movement across roles. These insights demonstrate how relational databases can
+                            support
+                            HR analytics and organizational decision‑making.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Technologies Used</h2>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>SQL</li>
+                            <li>QuickDBD (for ERD)</li>
+                            <li>Python (optional for data prep)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>GitHub Repository</h2>
+                        <p>
+                            View the full project on GitHub:
+                            <br />
+                            <a href="https://github.com/bcoleman-data/Employees_DB_HW9/" target="_blank">
+                                Employee Database Repository
+                            </a>
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+
+                    <section style="text-align: center;">
+                        <h2>Connect</h2>
+                        <!-- Email and Social -->
+
+                        <ul class="icons" style="justify-content: center;">
+                            <li>
+                                <a href="mailto:bcoleman-data@outlook.com" class="icon solid style2 fa-envelope">
+                                    <span class="label">Email</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://linkedin.com/in/bcoleman0" class="icon brands style2 fa-linkedin">
+                                    <span class="label">LinkedIn</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/bcoleman-data" class="icon brands style2 fa-github">
+                                    <span class="label">GitHub</span>
+                                </a>
+                            </li>
+
+                            <!-- LeetCode SVG icon -->
+                            <li>
+                                <a href="https://leetcode.com/u/bcoleman-data/" class="icon style2">
+                                    <span class="label">LeetCode</span>
+                                    <svg class="leetcode-icon" viewBox="0 0 64 64" aria-hidden="true">
+                                        <path
+                                            d="M41 4c-2 0-4 .8-5.7 2.3L18.8 22.8c-3.1 3.1-3.1 8.1 0 11.2l16.5 16.5c1.6 1.6 3.6 2.3 5.7 2.3s4.1-.8 5.7-2.3l4.2-4.2c1.2-1.2 1.2-3.1 0-4.3-1.2-1.2-3.1-1.2-4.3 0l-4.2 4.2c-.6.6-1.3.9-2.1.9s-1.5-.3-2.1-.9L23.1 30.8c-1.2-1.2-1.2-3.1 0-4.3L36.2 13.4c.6-.6 1.3-.9 2.1-.9s1.5.3 2.1.9l4.2 4.2c1.2 1.2 3.1 1.2 4.3 0 1.2-1.2 1.2-3.1 0-4.3l-4.2-4.2C45.1 4.8 43 4 41 4zm6.5 22H31.8c-1.7 0-3 1.3-3 3s1.3 3 3 3h15.7c3.3 0 6 2.7 6 6s-2.7 6-6 6h-9.2c-1.7 0-3 1.3-3 3s1.3 3 3 3h9.2c6.6 0 12-5.4 12-12s-5.4-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </section>
+
+                    <ul class="copyright">
+                        <li><strong>
+                                <h2>&copy;Brandon Coleman. All rights reserved.</h2>
+                            </strong></li>
+                        <li><strong>Design: <a href="http://html5up.net">HTML5 UP</a></strong></li>
+                    </ul>
+                </div>
+            </footer>
+
+
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

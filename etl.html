@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ETL Pipeline Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+                    <span class="title">Brandon Coleman Portfolio</span>
+                </a>
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li>
+                    <span class="opener">Projects</span>
+                    <ul>
+                        <a href="rainfall.html">Rainfall Prediction</a>
+                        <a href="citibike.html">CitiBike Analysis</a>
+                        <a href="mars.html">Mission to Mars</a>
+                        <a href="leetcode.html">LeetCode Practice</a>
+                        <a href="etl.html">ETL Pipeline</a>
+                        <a href="employee.html">Employee Database</a>
+                        <a href="vacancy.html">Vacancy Collaborative</a>
+
+                    </ul>
+                </li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="content-block">
+                <h1>ETL Pipeline Project</h1>
+
+                <section>
+                    <h2>Overview</h2>
+                    <p>
+                        This project demonstrates a complete Extract‑Transform‑Load (ETL) workflow built to clean,
+                        normalize, and load raw data into a structured relational database. The pipeline automates data
+                        ingestion, performs multi‑step transformations, and outputs a clean dataset ready for analysis
+                        and reporting.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Data Extraction</h2>
+                    <p>
+                        The pipeline begins by importing raw Denver Crime CSV files from Kaggle. These files contain
+                        inconsistencies, missing values, and mixed data types that require systematic cleaning before
+                        loading.
+                    </p>
+                    <div class="carousel-container carousel-1">
+                        <div class="carousel">
+                            <img src="/images/denver_crime.png" class="active">
+                            <img src="/images/offense_codes.png">
+                        </div>
+                        <div class="carousel-controls"> <span class="prev">&#10094;</span> <span
+                                class="next">&#10095;</span> </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h2>Data Transformation</h2>
+                    <p>
+                        The transformation stage includes:
+                    </p>
+                    <ul>
+                        <li>Handling missing or null values</li>
+                        <li>Standardizing column names and data types</li>
+                        <li>Normalizing categorical fields</li>
+                        <li>Joining related datasets</li>
+                        <li>Removing duplicates and invalid records</li>
+                    </ul>
+                </section>
+                    <p></p>
+                <section>
+                    <div class="carousel-container carousel-2">
+                        <div class="carousel"> 
+                            <img src="/images/ETL_Denver_transform.png" class="active"> 
+                            <img src="/images/denver_etl_t2.png">
+                        </div>
+                        <div class="carousel-controls"> <span class="prev">&#10094;</span> <span
+                                class="next">&#10095;</span> </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Loading Into the Database</h2>
+                    <p>
+                        After transformation, the cleaned dataset is loaded into a PostgreSQL database. The schema is
+                        designed to support efficient querying and downstream analytics.
+                    </p>
+
+                    <!-- Placeholder: Database load confirmation -->
+                    <span class="image fit">
+                        <img src="/images/postgres_load_etl.png" alt="Placeholder for database load screenshot" />
+                    </span>
+                </section>
+
+                <section>
+                    <h2>Schema Design</h2>
+                    <p>
+                        The final database schema organizes the cleaned data into normalized tables with clear
+                        relationships. This structure supports analytical queries and dashboarding.
+                    </p>
+
+                    <!-- Placeholder: Schema diagram -->
+                    <span class="image fit">
+                        <img src="/images/etl_schema.png" alt="Placeholder for schema or ERD diagram" />
+                    </span>
+                </section>
+
+                <section>
+                    <h2>Analysis & Outputs</h2>
+                    <p>
+                        Once loaded, the data can be used for reporting, dashboards, or further modeling. This project
+                        demonstrates how a well‑designed ETL pipeline improves data quality and enables reliable
+                        analytics.
+                    </p>
+
+                </section>
+
+                <section>
+                    <h2>Technologies Used</h2>
+                    <ul>
+                        <li>Python (Pandas)</li>
+                        <li>PostgreSQL</li>
+                        <li>SQL</li>
+                        <li>Jupyter Notebook</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>GitHub Repository</h2>
+                    <p>
+                        View the full project on GitHub:
+                        <br />
+                        <a href="https://github.com/bcoleman-data/DenverCrime" target="_blank">
+                            ETL Pipeline Repository
+                        </a>
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+
+                <section style="text-align: center;">
+                    <h2>Connect</h2>
+                    <!-- Email and Social -->
+
+                    <ul class="icons" style="justify-content: center;">
+                        <li>
+                            <a href="mailto:bcoleman-data@outlook.com" class="icon solid style2 fa-envelope">
+                                <span class="label">Email</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://linkedin.com/in/bcoleman0" class="icon brands style2 fa-linkedin">
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/bcoleman-data" class="icon brands style2 fa-github">
+                                <span class="label">GitHub</span>
+                            </a>
+                        </li>
+
+                        <!-- LeetCode SVG icon -->
+                        <li>
+                            <a href="https://leetcode.com/u/bcoleman-data/" class="icon style2">
+                                <span class="label">LeetCode</span>
+                                <svg class="leetcode-icon" viewBox="0 0 64 64" aria-hidden="true">
+                                    <path
+                                        d="M41 4c-2 0-4 .8-5.7 2.3L18.8 22.8c-3.1 3.1-3.1 8.1 0 11.2l16.5 16.5c1.6 1.6 3.6 2.3 5.7 2.3s4.1-.8 5.7-2.3l4.2-4.2c1.2-1.2 1.2-3.1 0-4.3-1.2-1.2-3.1-1.2-4.3 0l-4.2 4.2c-.6.6-1.3.9-2.1.9s-1.5-.3-2.1-.9L23.1 30.8c-1.2-1.2-1.2-3.1 0-4.3L36.2 13.4c.6-.6 1.3-.9 2.1-.9s1.5.3 2.1.9l4.2 4.2c1.2 1.2 3.1 1.2 4.3 0 1.2-1.2 1.2-3.1 0-4.3l-4.2-4.2C45.1 4.8 43 4 41 4zm6.5 22H31.8c-1.7 0-3 1.3-3 3s1.3 3 3 3h15.7c3.3 0 6 2.7 6 6s-2.7 6-6 6h-9.2c-1.7 0-3 1.3-3 3s1.3 3 3 3h9.2c6.6 0 12-5.4 12-12s-5.4-12-12-12z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <ul class="copyright">
+                    <li><strong>
+                            <h2>&copy;Brandon Coleman. All rights reserved.</h2>
+                        </strong></li>
+                    <li><strong>Design: <a href="http://html5up.net">HTML5 UP</a></strong></li>
+                </ul>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
